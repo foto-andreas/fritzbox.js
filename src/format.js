@@ -176,7 +176,7 @@ fritzFormat.phonebook = (phonebook) => {
     if (phonebook[i].mod_time) {
       formattedPhonebook[i].lastModified = phonebook[i].mod_time[0]
     }
-    if (phonebook[i].setup[0].ringTone) {
+    if (phonebook[i].setup && phonebook[i].setup[0].ringTone) {
       formattedPhonebook[i].ringtone = phonebook[i].setup[0].ringTone[0]
     }
   }
